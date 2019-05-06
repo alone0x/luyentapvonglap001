@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button style="width: 500px;height: 500px" onclick="test()">chơi/chơi lại</button>
+<script>
+    function test() {
+        min = parseInt(prompt("nhập vào giá trị nhỏ nhất :  "));
+        max = parseInt(prompt(" nhập vào giá trị lớn nhất"));
+        nhap = parseInt(prompt(" nhập vào số của bạn :"));
+        a =  min +parseInt(Math.random() * (max - min));
+        while(nhap === a) {
+
+
+            if(nhap>a){alert("lớn hơn rồi")}
+            else {alert("bé hơn rồi")}
+            nhap =  parseInt(prompt(" nhập vào số của bạn :"));
+        }
+        alert("bạn đúng");
+    }
+</script>
+</body>
+</html>
