@@ -12,14 +12,17 @@
         max = parseInt(prompt(" nhập vào giá trị lớn nhất"));
         nhap = parseInt(prompt(" nhập vào số của bạn :"));
         a =  min +parseInt(Math.random() * (max - min));
-        while(nhap === a) {
-
-
+        console.log(a);
+        while(nhap !== a) {
             if(nhap>a){alert("lớn hơn rồi")}
             else {alert("bé hơn rồi")}
             nhap =  parseInt(prompt(" nhập vào số của bạn :"));
+
         }
-        alert("bạn đúng");
+        if(nhap===a){
+            alert("bạn đúng");
+        }
+
     }
 </script>
 </body>
